@@ -1,0 +1,182 @@
+html, body {font-family: 'Open Sans', sans-serif !important;height: 100%;}
+body {font-size: 15px; line-height: 1.64; }
+.div{
+  display: block;
+}
+.navbar{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height:7%;
+  font-size: 20px;
+  z-index: 500;
+}
+#navigation{
+  float: right;
+}
+.bgimg{
+  background: url("bgimg.jpg");
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 300px;
+  text-align: center;
+  color: white;
+  opacity: 0.95;
+  /*text-shadow: 2px 2px 4px #DEDEDE;*/
+}
+.white{
+  text-align: center;
+  background-color: white;
+}
+.sect{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-size: 15px;
+  color: #7D7D7D;
+  padding-left: 10PX;
+  padding-right: 10px;
+  text-align: left;
+}
+h1{
+  color: #5E5448;
+  font-size: 40px;
+  font-style: normal;
+  padding: 20px;
+  text-align: center;
+}
+.heading::before,
+.heading::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid white;
+    width: 80px;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
+.row{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+.pic{
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 1px;
+  border-radius: 8px;
+}
+.brown{
+  background-color: #F0F0F0;
+}
+.work{
+  color: #0CACF3;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.work-loc{
+  color: #7D7D7D;
+  text-decoration: underline;
+}
+.posit{
+  color: Green;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.no-bullets{
+  list-style-type: none;
+}
+progress {
+	width: 400px;
+	height: 14px;
+	display: block;
+	/* Important Thing */
+	-webkit-appearance: none;
+	border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+	background: #D3D3D3;
+	border-radius: 50px;
+  border-color: gray;
+  border: 1px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, #ba7448, #c4672d);
+
+	/* Looks great, now animating it */
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position: -100px 0px, 0 0, 0 0}
+}
+.li-space{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Prefix-free was creating issues with the animation */
+.project{
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 40px;
+  /* background-color: #2196F3; */
+  padding: 20px;
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+.dark{
+  background: url("contact.png");
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  /* margin-top: 50px; */
+  color: black;
+  /* opacity: 0.65; */
+}
+.info{
+  text-align: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+.smg{
+  padding-top: 0;
+  margin-top: 0;
+}
